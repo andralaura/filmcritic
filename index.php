@@ -1,4 +1,4 @@
 <?php
-echo "FilmCritic"
+echo "FilmCritic</p>";
 echo "This is a test.";
 ?>
