@@ -18,7 +18,7 @@
             <li><a href="<?php echo base_url(); ?>pages/view/about">About</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php echo base_url(); ?>pages/view/login">Sign in</a></li>
+            <li><a href="<?php echo base_url(); ?>pages/view/login">Sign in</a></li> 
           </ul>
         </div>
       </div>
