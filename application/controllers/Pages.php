@@ -1,14 +1,15 @@
 <?php 
-  class Pages extends CI_Controller{
-    public function view($page = 'home'){
-      if(!file_exists(APPPATH.'views/pages/'.$page.'.php')){
-        show_404();
-      }
+class Pages extends CI_Controller{
 
-      $data['title'] = ucfirst($page);
+	public function view($page = 'home'){
+		if(!file_exists(APPPATH.'views/pages/'.$page.'.php')){
+			show_404();
+		}
 
-      $this->load->view('templates/header');
-      $this->load->view('pages/'.$page, $data);
-      $this->load->view('templates/footer');
-    }
-  }
+		$data['title'] = ucfirst($page);
+
+		$this->load->view('templates/header');
+		$this->load->view('pages/'.$page, $data);
+		$this->load->view('templates/footer');
+	}
+}
