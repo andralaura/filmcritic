@@ -1,2 +1,1 @@
-<h2><?= $title ?></h2>
-<p>Welcome to FilmCritic!</p>
+<h2><?= $this->lang->line('i_home') ?></h2>

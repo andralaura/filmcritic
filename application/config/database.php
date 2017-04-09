@@ -74,23 +74,23 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
+	//'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'filmcritic',
-	'password' => '',
+	'username' => 'db-user',
+	'password' => 'db-password',
 	'database' => 'filmcritic',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
-	'pconnect' => FALSE,
+	'pconnect' => TRUE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
+	//'swap_pre' => '',
 	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
+	//'compress' => FALSE,
+	//'stricton' => FALSE,
+	//'failover' => array(),
+	//'save_queries' => TRUE
 );

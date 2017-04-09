@@ -1,0 +1,1 @@
+<h2><?= $this->lang->line('i_donate') ?></h2>
