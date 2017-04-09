@@ -1,30 +1,25 @@
 <html>
-	<head>
-		<title>filmcritic</title>
-		<link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
-	</head>
-	<body>
-	<nav class="navbar navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="<?php echo base_url(); ?>">filmcritic</a>
-        </div>
-        <div id="navbar">
-          <ul class="nav navbar-nav">
-            <li><a href="<?php echo base_url(); ?>">Home</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/view/browse">Browse</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/view/addmovie">Add movie</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/view/manage">Manage</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/view/about">About</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="<?php echo base_url(); ?>lang_switch/switch_language/english">in English</a></li>
-              <li><a href="<?php echo base_url(); ?>lang_switch/switch_language/estonian">eesti keeles</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/view/login">Sign in</a></li>
+    <head>
+        <title>filmcritic</title>
+        <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="<?php echo base_url(); ?>">filmcritic</a>
+                </div>
+                <div id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="<?php echo base_url(); ?>"><?= $this->lang->line('i_home') ?></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="<?php echo base_url(); ?>lang_switch/switch_language/english">in English</a></li>
+                        <li><a href="<?php echo base_url(); ?>lang_switch/switch_language/estonian">eesti keeles</a></li>
+                        <li><a href="<?php echo base_url(); ?>users/login"><?= $this->lang->line('i_log_in') ?></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
+        <div class="container">

@@ -11,6 +11,5 @@ class Lang_switch extends CI_Controller
 		$language = ($language != "") ? $language : "english";
 		$this->session->set_userdata('site_lang', $language);
 		redirect($_SERVER['HTTP_REFERER']);
-		//redirect(base_url());
 	}
 }
