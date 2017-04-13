@@ -31,8 +31,9 @@ class Users extends CI_Controller {
 				$checkLogin = $this->user->getRows($con);
 				if($checkLogin){
 					$this->session->set_userdata('isUserLoggedIn',TRUE);
+                    $this->session->set_userdata('username',$checkLogin['username']); //todo
 					$this->session->set_userdata('userId',$checkLogin['id']);
-					redirect($_SERVER['HTTP_REFERER']); // todo httpreferer siia panna? $_SERVER['HTTP_REFERER']
+					redirect(base_url()); // todo httpreferer siia panna? $_SERVER['HTTP_REFERER']
 				}else{
 					$data['error_msg'] = 'Wrong email or password, please try again.';
 				}
