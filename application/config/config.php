@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-//$config['base_url'] = 'http://filmcritic/';
-$config['base_url'] = 'http://filmcritic.herokuapp.com/';
+$config['base_url'] = 'http://filmcritic/';
+//$config['base_url'] = 'http://filmcritic.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------

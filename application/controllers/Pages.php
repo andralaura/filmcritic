@@ -6,8 +6,14 @@ class Pages extends CI_Controller{
 			show_404();
 		}
 
-		$this->load->view('templates/header');
-		$this->load->view('pages/'.$page);
+        $data['username'] = $this->session->userdata('username');
+
+		if ($this->session->userdata('isUserLoggedIn')) {
+            $this->load->view('templates/header_logged_in', $data);
+        } else {
+            $this->load->view('templates/header');
+        }
+		$this->load->view('pages/'.$page, $data);
 		$this->load->view('templates/footer');
 	}
 }
