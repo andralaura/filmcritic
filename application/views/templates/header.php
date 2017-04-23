@@ -5,6 +5,13 @@
         <title>filmcritic<?php if (!empty($title)) {echo " – $title";}?></title>
         <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
         <link rel="stylesheet" href="/css/style.css">
+        <style>
+            .small-image{
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-inverse">
