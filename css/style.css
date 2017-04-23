@@ -1,0 +1,23 @@
+#map {
+    display: block;
+    height: 20em;
+    width: 100%;
+}
+
+#footer nav ul {
+    list-style: none;
+    float: right;
+}
+
+#footer nav ul li {
+    float: left;
+}
+
+#footer nav ul li a {
+    margin-left: 1em;
+    padding: 0.5em;
+}
+
+#footer > p {
+    float: left;
+}

@@ -6,13 +6,11 @@ class Pages extends CI_Controller{
 			show_404();
 		}
 
-        $data['username'] = $this->session->userdata('username');
+		$data = array();
+		$data['google_maps_key'] = file_get_contents('./api_keys/google_maps.txt');
+		//$data['title'] = 'mingi title lehele';
 
-		if ($this->session->userdata('isUserLoggedIn')) {
-            $this->load->view('templates/header_logged_in', $data);
-        } else {
-            $this->load->view('templates/header');
-        }
+        $this->load->view('templates/header', $data);
 		$this->load->view('pages/'.$page, $data);
 		$this->load->view('templates/footer');
 	}
