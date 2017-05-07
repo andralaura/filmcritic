@@ -16,3 +16,6 @@ $lang['i_email'] = 'E-posti aadress';
 $lang['i_confirm_password'] = 'Parool uuesti';
 $lang['i_log_out'] = 'Logi välja';
 $lang['i_home_welcome'] = 'Tere tulemast';
+$lang['i_makers'] = 'Tegijad';
+$lang['i_location'] = 'Kus me asume?';
+$lang['i_profile_picture'] = 'profiilipilt';

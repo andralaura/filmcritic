@@ -4,6 +4,13 @@
     width: 100%;
 }
 
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
 #footer nav ul {
     list-style: none;
     float: right;

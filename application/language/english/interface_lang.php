@@ -16,3 +16,6 @@ $lang['i_email'] = 'Email aaddress';
 $lang['i_confirm_password'] = 'Confirm password';
 $lang['i_log_out'] = 'Log out';
 $lang['i_home_welcome'] = 'Welcome to filmcritic';
+$lang['i_makers'] = 'Makers';
+$lang['i_location'] = 'Location';
+$lang['i_profile_picture'] = 'profile picture';
